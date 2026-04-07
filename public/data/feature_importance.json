@@ -1,0 +1,31 @@
+{
+  "features": [
+    "age",
+    "age_at_first_arrest",
+    "priors_count",
+    "total_juvenile_charges",
+    "has_juvenile_record",
+    "charge_severity",
+    "criminal_history_length"
+  ],
+  "labels": [
+    "Age",
+    "Age at First Arrest",
+    "Prior Convictions",
+    "Juvenile Charges",
+    "Has Juvenile Record",
+    "Charge Severity",
+    "Criminal History Length"
+  ],
+  "importances": [
+    -0.0102,
+    -0.01283,
+    0.02216,
+    0.00172,
+    -0.0019,
+    0.01059,
+    0.02932
+  ],
+  "baseline_accuracy": 0.6424,
+  "baseline_auc": 0.6725
+}

@@ -1,0 +1,261 @@
+{
+  "baseline": {
+    "overall": {
+      "accuracy": 0.6697,
+      "auc": 0.7201,
+      "fpr": 0.1869,
+      "fnr": 0.5021,
+      "ppv": 0.6897,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6728,
+      "auc": 0.7299,
+      "fpr": 0.2663,
+      "fnr": 0.3817,
+      "ppv": 0.7213,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6596,
+      "auc": 0.6685,
+      "fpr": 0.123,
+      "fnr": 0.685,
+      "ppv": 0.6176,
+      "n": 517
+    },
+    "features_used": [
+      "age",
+      "age_at_first_arrest",
+      "priors_count",
+      "total_juvenile_charges",
+      "has_juvenile_record",
+      "charge_severity",
+      "criminal_history_length"
+    ]
+  },
+  "remove_age": {
+    "overall": {
+      "accuracy": 0.6424,
+      "auc": 0.6833,
+      "fpr": 0.1655,
+      "fnr": 0.5877,
+      "ppv": 0.6752,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6259,
+      "auc": 0.6752,
+      "fpr": 0.2376,
+      "fnr": 0.4965,
+      "ppv": 0.7026,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6538,
+      "auc": 0.6593,
+      "fpr": 0.1136,
+      "fnr": 0.715,
+      "ppv": 0.6129,
+      "n": 517
+    },
+    "features_used": [
+      "priors_count",
+      "total_juvenile_charges",
+      "has_juvenile_record",
+      "charge_severity",
+      "criminal_history_length"
+    ]
+  },
+  "remove_age_first_arrest": {
+    "overall": {
+      "accuracy": 0.6697,
+      "auc": 0.7201,
+      "fpr": 0.1869,
+      "fnr": 0.5021,
+      "ppv": 0.6897,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6728,
+      "auc": 0.7299,
+      "fpr": 0.2663,
+      "fnr": 0.3817,
+      "ppv": 0.7213,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6596,
+      "auc": 0.6684,
+      "fpr": 0.123,
+      "fnr": 0.685,
+      "ppv": 0.6176,
+      "n": 517
+    },
+    "features_used": [
+      "age",
+      "priors_count",
+      "total_juvenile_charges",
+      "has_juvenile_record",
+      "charge_severity",
+      "criminal_history_length"
+    ]
+  },
+  "remove_priors": {
+    "overall": {
+      "accuracy": 0.6697,
+      "auc": 0.7201,
+      "fpr": 0.1869,
+      "fnr": 0.5021,
+      "ppv": 0.6897,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6728,
+      "auc": 0.7299,
+      "fpr": 0.2663,
+      "fnr": 0.3817,
+      "ppv": 0.7213,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6596,
+      "auc": 0.6685,
+      "fpr": 0.123,
+      "fnr": 0.685,
+      "ppv": 0.6176,
+      "n": 517
+    },
+    "features_used": [
+      "age",
+      "age_at_first_arrest",
+      "total_juvenile_charges",
+      "has_juvenile_record",
+      "charge_severity",
+      "criminal_history_length"
+    ]
+  },
+  "remove_juvenile": {
+    "overall": {
+      "accuracy": 0.6703,
+      "auc": 0.7234,
+      "fpr": 0.1905,
+      "fnr": 0.4964,
+      "ppv": 0.6881,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6704,
+      "auc": 0.7325,
+      "fpr": 0.2846,
+      "fnr": 0.37,
+      "ppv": 0.7116,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6615,
+      "auc": 0.672,
+      "fpr": 0.1199,
+      "fnr": 0.685,
+      "ppv": 0.6238,
+      "n": 517
+    },
+    "features_used": [
+      "age",
+      "age_at_first_arrest",
+      "priors_count",
+      "charge_severity",
+      "criminal_history_length"
+    ]
+  },
+  "remove_proxies": {
+    "overall": {
+      "accuracy": 0.6418,
+      "auc": 0.6793,
+      "fpr": 0.1464,
+      "fnr": 0.612,
+      "ppv": 0.6886,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6198,
+      "auc": 0.6647,
+      "fpr": 0.2219,
+      "fnr": 0.5222,
+      "ppv": 0.7059,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6576,
+      "auc": 0.6595,
+      "fpr": 0.0883,
+      "fnr": 0.745,
+      "ppv": 0.6456,
+      "n": 517
+    },
+    "features_used": [
+      "priors_count",
+      "charge_severity"
+    ]
+  },
+  "only_priors": {
+    "overall": {
+      "accuracy": 0.6372,
+      "auc": 0.6716,
+      "fpr": 0.1298,
+      "fnr": 0.6419,
+      "ppv": 0.6972,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.616,
+      "auc": 0.6672,
+      "fpr": 0.1932,
+      "fnr": 0.555,
+      "ppv": 0.7197,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6518,
+      "auc": 0.6523,
+      "fpr": 0.082,
+      "fnr": 0.77,
+      "ppv": 0.6389,
+      "n": 517
+    },
+    "features_used": [
+      "priors_count"
+    ]
+  },
+  "compas_proxies_only": {
+    "overall": {
+      "accuracy": 0.6697,
+      "auc": 0.7219,
+      "fpr": 0.1786,
+      "fnr": 0.5121,
+      "ppv": 0.6951,
+      "n": 1541
+    },
+    "black": {
+      "accuracy": 0.6802,
+      "auc": 0.7381,
+      "fpr": 0.2533,
+      "fnr": 0.3794,
+      "ppv": 0.732,
+      "n": 810
+    },
+    "white": {
+      "accuracy": 0.6499,
+      "auc": 0.6645,
+      "fpr": 0.1199,
+      "fnr": 0.715,
+      "ppv": 0.6,
+      "n": 517
+    },
+    "features_used": [
+      "age_at_first_arrest",
+      "total_juvenile_charges",
+      "criminal_history_length"
+    ]
+  }
+}

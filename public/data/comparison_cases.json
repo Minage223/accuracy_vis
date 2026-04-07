@@ -1,0 +1,110 @@
+[
+  {
+    "case_a": {
+      "race": "Caucasian",
+      "case_number": "13009676CF10A",
+      "age": 42,
+      "sex": "Male",
+      "priors_count": 0,
+      "charge_severity": "Felony",
+      "charge_desc": "Aggravated Assault w/Firearm",
+      "juvenile_charges": 0,
+      "age_at_first_arrest": 42,
+      "criminal_history_length": 0,
+      "decile_score": 1,
+      "actual_recidivism": 0
+    },
+    "case_b": {
+      "race": "African-American",
+      "case_number": "13014121CF10A",
+      "age": 41,
+      "sex": "Male",
+      "priors_count": 0,
+      "charge_severity": "Felony",
+      "charge_desc": "Poss3,4 Methylenedioxymethcath",
+      "juvenile_charges": 0,
+      "age_at_first_arrest": 41,
+      "criminal_history_length": 0,
+      "decile_score": 4,
+      "actual_recidivism": 0
+    },
+    "score_gap": 3,
+    "key_differences": [
+      "Neighborhood policing intensity (proxy: age_at_first_arrest)",
+      "Community over-surveillance inflating criminal history length"
+    ],
+    "explanation": "Both defendants are similar in age, criminal history, and charge type. The score gap reflects structural differences in how communities are policed, not individual risk factors."
+  },
+  {
+    "case_a": {
+      "race": "Caucasian",
+      "case_number": "13004974CF10A",
+      "age": 25,
+      "sex": "Male",
+      "priors_count": 3,
+      "charge_severity": "Felony",
+      "charge_desc": "Poss3,4 Methylenedioxymethcath",
+      "juvenile_charges": 1,
+      "age_at_first_arrest": 25,
+      "criminal_history_length": 3,
+      "decile_score": 7,
+      "actual_recidivism": 0
+    },
+    "case_b": {
+      "race": "African-American",
+      "case_number": "13017598CF10A",
+      "age": 25,
+      "sex": "Male",
+      "priors_count": 3,
+      "charge_severity": "Felony",
+      "charge_desc": "Grand Theft in the 3rd Degree",
+      "juvenile_charges": 0,
+      "age_at_first_arrest": 25,
+      "criminal_history_length": 3,
+      "decile_score": 10,
+      "actual_recidivism": 0
+    },
+    "score_gap": 3,
+    "key_differences": [
+      "Neighborhood policing intensity (proxy: age_at_first_arrest)",
+      "Community over-surveillance inflating criminal history length"
+    ],
+    "explanation": "Both defendants are similar in age, criminal history, and charge type. The score gap reflects structural differences in how communities are policed, not individual risk factors."
+  },
+  {
+    "case_a": {
+      "race": "Caucasian",
+      "case_number": "13008932CF10A",
+      "age": 22,
+      "sex": "Male",
+      "priors_count": 1,
+      "charge_severity": "Felony",
+      "charge_desc": "False Ownership Info/Pawn Item",
+      "juvenile_charges": 0,
+      "age_at_first_arrest": 22,
+      "criminal_history_length": 1,
+      "decile_score": 5,
+      "actual_recidivism": 1
+    },
+    "case_b": {
+      "race": "African-American",
+      "case_number": "13005492CF10A",
+      "age": 21,
+      "sex": "Male",
+      "priors_count": 1,
+      "charge_severity": "Felony",
+      "charge_desc": "Battery on Law Enforc Officer",
+      "juvenile_charges": 0,
+      "age_at_first_arrest": 21,
+      "criminal_history_length": 1,
+      "decile_score": 9,
+      "actual_recidivism": 1
+    },
+    "score_gap": 4,
+    "key_differences": [
+      "Neighborhood policing intensity (proxy: age_at_first_arrest)",
+      "Community over-surveillance inflating criminal history length"
+    ],
+    "explanation": "Both defendants are similar in age, criminal history, and charge type. The score gap reflects structural differences in how communities are policed, not individual risk factors."
+  }
+]

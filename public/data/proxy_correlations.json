@@ -1,0 +1,498 @@
+{
+  "nodes": [
+    {
+      "id": "race",
+      "label": "Race",
+      "type": "target",
+      "correlation": 1.0
+    },
+    {
+      "id": "decile_score",
+      "label": "COMPAS Decile Score",
+      "type": "strong_proxy",
+      "correlation": 0.3132,
+      "p_value": 0.0
+    },
+    {
+      "id": "criminal_history_length",
+      "label": "Criminal History Length",
+      "type": "weak_proxy",
+      "correlation": 0.2176,
+      "p_value": 0.0
+    },
+    {
+      "id": "priors_count",
+      "label": "Prior Convictions",
+      "type": "weak_proxy",
+      "correlation": 0.2166,
+      "p_value": 0.0
+    },
+    {
+      "id": "age_at_first_arrest",
+      "label": "Age at First Arrest",
+      "type": "weak_proxy",
+      "correlation": -0.1868,
+      "p_value": 0.0
+    },
+    {
+      "id": "age",
+      "label": "Age",
+      "type": "weak_proxy",
+      "correlation": -0.1847,
+      "p_value": 0.0
+    },
+    {
+      "id": "two_year_recid",
+      "label": "2-Year Recidivism (Actual)",
+      "type": "weak_proxy",
+      "correlation": 0.1409,
+      "p_value": 0.0
+    },
+    {
+      "id": "has_juvenile_record",
+      "label": "Has Juvenile Record",
+      "type": "weak_proxy",
+      "correlation": 0.1392,
+      "p_value": 0.0
+    },
+    {
+      "id": "total_juvenile_charges",
+      "label": "Juvenile Charges",
+      "type": "weak_proxy",
+      "correlation": 0.1049,
+      "p_value": 0.0
+    },
+    {
+      "id": "charge_severity",
+      "label": "Current Charge Severity",
+      "type": "weak_proxy",
+      "correlation": 0.1042,
+      "p_value": 0.0
+    },
+    {
+      "id": "juv_misd_count",
+      "label": "Juvenile Misdemeanors",
+      "type": "independent",
+      "correlation": 0.0935,
+      "p_value": 0.0
+    },
+    {
+      "id": "juv_fel_count",
+      "label": "Juvenile Felonies",
+      "type": "independent",
+      "correlation": 0.0595,
+      "p_value": 3e-06
+    },
+    {
+      "id": "juv_other_count",
+      "label": "Juvenile Other",
+      "type": "independent",
+      "correlation": 0.0493,
+      "p_value": 0.000107
+    }
+  ],
+  "links": [
+    {
+      "source": "race",
+      "target": "decile_score",
+      "weight": 0.3132,
+      "correlation": 0.3132,
+      "direction": "positive"
+    },
+    {
+      "source": "race",
+      "target": "criminal_history_length",
+      "weight": 0.2176,
+      "correlation": 0.2176,
+      "direction": "positive"
+    },
+    {
+      "source": "race",
+      "target": "priors_count",
+      "weight": 0.2166,
+      "correlation": 0.2166,
+      "direction": "positive"
+    },
+    {
+      "source": "race",
+      "target": "age_at_first_arrest",
+      "weight": 0.1868,
+      "correlation": -0.1868,
+      "direction": "negative"
+    },
+    {
+      "source": "race",
+      "target": "age",
+      "weight": 0.1847,
+      "correlation": -0.1847,
+      "direction": "negative"
+    },
+    {
+      "source": "race",
+      "target": "two_year_recid",
+      "weight": 0.1409,
+      "correlation": 0.1409,
+      "direction": "positive"
+    },
+    {
+      "source": "race",
+      "target": "has_juvenile_record",
+      "weight": 0.1392,
+      "correlation": 0.1392,
+      "direction": "positive"
+    },
+    {
+      "source": "race",
+      "target": "total_juvenile_charges",
+      "weight": 0.1049,
+      "correlation": 0.1049,
+      "direction": "positive"
+    },
+    {
+      "source": "race",
+      "target": "charge_severity",
+      "weight": 0.1042,
+      "correlation": 0.1042,
+      "direction": "positive"
+    }
+  ],
+  "corr_matrix": {
+    "features": [
+      "age",
+      "age_at_first_arrest",
+      "priors_count",
+      "total_juvenile_charges",
+      "juv_fel_count",
+      "juv_misd_count",
+      "juv_other_count",
+      "has_juvenile_record",
+      "charge_severity",
+      "criminal_history_length",
+      "decile_score",
+      "two_year_recid",
+      "race_binary"
+    ],
+    "labels": [
+      "Age",
+      "Age at First Arrest",
+      "Prior Convictions",
+      "Juvenile Charges",
+      "Juvenile Felonies",
+      "Juvenile Misdemeanors",
+      "Juvenile Other",
+      "Has Juvenile Record",
+      "Current Charge Severity",
+      "Criminal History Length",
+      "COMPAS Decile Score",
+      "2-Year Recidivism (Actual)",
+      "Race"
+    ],
+    "values": [
+      [
+        1.0,
+        0.9996,
+        0.119,
+        -0.1722,
+        -0.0496,
+        -0.1113,
+        -0.1726,
+        -0.2428,
+        -0.1014,
+        0.1186,
+        -0.4043,
+        -0.1895,
+        -0.1847
+      ],
+      [
+        0.9996,
+        1.0,
+        0.1126,
+        -0.1877,
+        -0.0765,
+        -0.1141,
+        -0.1739,
+        -0.2541,
+        -0.1027,
+        0.1121,
+        -0.4093,
+        -0.1918,
+        -0.1868
+      ],
+      [
+        0.119,
+        0.1126,
+        1.0,
+        0.2945,
+        0.1901,
+        0.2686,
+        0.1094,
+        0.2654,
+        0.1447,
+        0.9994,
+        0.447,
+        0.2903,
+        0.2166
+      ],
+      [
+        -0.1722,
+        -0.1877,
+        0.2945,
+        1.0,
+        0.5631,
+        0.708,
+        0.6681,
+        0.7186,
+        0.0636,
+        0.2953,
+        0.2981,
+        0.1632,
+        0.1049
+      ],
+      [
+        -0.0496,
+        -0.0765,
+        0.1901,
+        0.5631,
+        1.0,
+        0.0805,
+        0.044,
+        0.3256,
+        0.0442,
+        0.1914,
+        0.1648,
+        0.0807,
+        0.0595
+      ],
+      [
+        -0.1113,
+        -0.1141,
+        0.2686,
+        0.708,
+        0.0805,
+        1.0,
+        0.2572,
+        0.468,
+        0.0384,
+        0.268,
+        0.2178,
+        0.1101,
+        0.0935
+      ],
+      [
+        -0.1726,
+        -0.1739,
+        0.1094,
+        0.6681,
+        0.044,
+        0.2572,
+        1.0,
+        0.6007,
+        0.0412,
+        0.1103,
+        0.195,
+        0.1257,
+        0.0493
+      ],
+      [
+        -0.2428,
+        -0.2541,
+        0.2654,
+        0.7186,
+        0.3256,
+        0.468,
+        0.6007,
+        1.0,
+        0.0767,
+        0.2668,
+        0.3537,
+        0.1928,
+        0.1392
+      ],
+      [
+        -0.1014,
+        -0.1027,
+        0.1447,
+        0.0636,
+        0.0442,
+        0.0384,
+        0.0412,
+        0.0767,
+        1.0,
+        0.1454,
+        0.2002,
+        0.12,
+        0.1042
+      ],
+      [
+        0.1186,
+        0.1121,
+        0.9994,
+        0.2953,
+        0.1914,
+        0.268,
+        0.1103,
+        0.2668,
+        0.1454,
+        1.0,
+        0.4488,
+        0.291,
+        0.2176
+      ],
+      [
+        -0.4043,
+        -0.4093,
+        0.447,
+        0.2981,
+        0.1648,
+        0.2178,
+        0.195,
+        0.3537,
+        0.2002,
+        0.4488,
+        1.0,
+        0.3652,
+        0.3132
+      ],
+      [
+        -0.1895,
+        -0.1918,
+        0.2903,
+        0.1632,
+        0.0807,
+        0.1101,
+        0.1257,
+        0.1928,
+        0.12,
+        0.291,
+        0.3652,
+        1.0,
+        0.1409
+      ],
+      [
+        -0.1847,
+        -0.1868,
+        0.2166,
+        0.1049,
+        0.0595,
+        0.0935,
+        0.0493,
+        0.1392,
+        0.1042,
+        0.2176,
+        0.3132,
+        0.1409,
+        1.0
+      ]
+    ]
+  },
+  "bw_compare": [
+    {
+      "id": "age",
+      "label": "Age",
+      "black_mean": 32.435,
+      "white_mean": 37.4907,
+      "black_z": 2.764,
+      "white_z": 3.1948,
+      "race_corr": -0.1847
+    },
+    {
+      "id": "age_at_first_arrest",
+      "label": "Age at First Arrest",
+      "black_mean": 32.3524,
+      "white_mean": 37.4674,
+      "black_z": 2.751,
+      "white_z": 3.1859,
+      "race_corr": -0.1868
+    },
+    {
+      "id": "priors_count",
+      "label": "Prior Convictions",
+      "black_mean": 4.2381,
+      "white_mean": 2.2891,
+      "black_z": 0.8944,
+      "white_z": 0.4831,
+      "race_corr": 0.2166
+    },
+    {
+      "id": "total_juvenile_charges",
+      "label": "Juvenile Charges",
+      "black_mean": 0.355,
+      "white_mean": 0.1645,
+      "black_z": 0.3828,
+      "white_z": 0.1775,
+      "race_corr": 0.1049
+    },
+    {
+      "id": "juv_fel_count",
+      "label": "Juvenile Felonies",
+      "black_mean": 0.0854,
+      "white_mean": 0.0252,
+      "black_z": 0.185,
+      "white_z": 0.0546,
+      "race_corr": 0.0595
+    },
+    {
+      "id": "juv_misd_count",
+      "label": "Juvenile Misdemeanors",
+      "black_mean": 0.1364,
+      "white_mean": 0.0414,
+      "black_z": 0.2738,
+      "white_z": 0.083,
+      "race_corr": 0.0935
+    },
+    {
+      "id": "juv_other_count",
+      "label": "Juvenile Other",
+      "black_mean": 0.1332,
+      "white_mean": 0.098,
+      "black_z": 0.2829,
+      "white_z": 0.208,
+      "race_corr": 0.0493
+    },
+    {
+      "id": "has_juvenile_record",
+      "label": "Has Juvenile Record",
+      "black_mean": 0.1786,
+      "white_mean": 0.0856,
+      "black_z": 0.5262,
+      "white_z": 0.2522,
+      "race_corr": 0.1392
+    },
+    {
+      "id": "charge_severity",
+      "label": "Current Charge Severity",
+      "black_mean": 0.6917,
+      "white_mean": 0.5915,
+      "black_z": 1.4437,
+      "white_z": 1.2347,
+      "race_corr": 0.1042
+    },
+    {
+      "id": "criminal_history_length",
+      "label": "Criminal History Length",
+      "black_mean": 4.2321,
+      "white_mean": 2.2848,
+      "black_z": 0.8987,
+      "white_z": 0.4852,
+      "race_corr": 0.2176
+    },
+    {
+      "id": "decile_score",
+      "label": "COMPAS Decile Score",
+      "black_mean": 5.2769,
+      "white_mean": 3.6353,
+      "black_z": 1.8593,
+      "white_z": 1.2809,
+      "race_corr": 0.3132
+    },
+    {
+      "id": "two_year_recid",
+      "label": "2-Year Recidivism (Actual)",
+      "black_mean": 0.5231,
+      "white_mean": 0.3909,
+      "black_z": 1.0505,
+      "white_z": 0.7848,
+      "race_corr": 0.1409
+    }
+  ]
+}

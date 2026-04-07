@@ -1,0 +1,468 @@
+{
+  "thresholds": [
+    {
+      "threshold": 0.1,
+      "black": {
+        "fpr": 0.9974,
+        "fnr": 0.0,
+        "ppv": 0.5278,
+        "positive_rate": 0.9988,
+        "tp": 427,
+        "fp": 382,
+        "tn": 1,
+        "fn": 0
+      },
+      "white": {
+        "fpr": 0.9874,
+        "fnr": 0.01,
+        "ppv": 0.3875,
+        "positive_rate": 0.9884,
+        "tp": 198,
+        "fp": 313,
+        "tn": 4,
+        "fn": 2
+      },
+      "demographic_parity_gap": 0.0104,
+      "equalized_odds_fpr_gap": 0.01,
+      "equalized_odds_fnr_gap": -0.01,
+      "predictive_parity_gap": 0.1403
+    },
+    {
+      "threshold": 0.15,
+      "black": {
+        "fpr": 0.9843,
+        "fnr": 0.0,
+        "ppv": 0.5311,
+        "positive_rate": 0.9926,
+        "tp": 427,
+        "fp": 377,
+        "tn": 6,
+        "fn": 0
+      },
+      "white": {
+        "fpr": 0.9054,
+        "fnr": 0.025,
+        "ppv": 0.4046,
+        "positive_rate": 0.9323,
+        "tp": 195,
+        "fp": 287,
+        "tn": 30,
+        "fn": 5
+      },
+      "demographic_parity_gap": 0.0603,
+      "equalized_odds_fpr_gap": 0.0789,
+      "equalized_odds_fnr_gap": -0.025,
+      "predictive_parity_gap": 0.1265
+    },
+    {
+      "threshold": 0.2,
+      "black": {
+        "fpr": 0.9504,
+        "fnr": 0.0187,
+        "ppv": 0.5351,
+        "positive_rate": 0.9667,
+        "tp": 419,
+        "fp": 364,
+        "tn": 19,
+        "fn": 8
+      },
+      "white": {
+        "fpr": 0.8013,
+        "fnr": 0.09,
+        "ppv": 0.4174,
+        "positive_rate": 0.8433,
+        "tp": 182,
+        "fp": 254,
+        "tn": 63,
+        "fn": 18
+      },
+      "demographic_parity_gap": 0.1234,
+      "equalized_odds_fpr_gap": 0.1491,
+      "equalized_odds_fnr_gap": -0.0713,
+      "predictive_parity_gap": 0.1177
+    },
+    {
+      "threshold": 0.25,
+      "black": {
+        "fpr": 0.8956,
+        "fnr": 0.0375,
+        "ppv": 0.5451,
+        "positive_rate": 0.9309,
+        "tp": 411,
+        "fp": 343,
+        "tn": 40,
+        "fn": 16
+      },
+      "white": {
+        "fpr": 0.6435,
+        "fnr": 0.15,
+        "ppv": 0.4545,
+        "positive_rate": 0.7234,
+        "tp": 170,
+        "fp": 204,
+        "tn": 113,
+        "fn": 30
+      },
+      "demographic_parity_gap": 0.2075,
+      "equalized_odds_fpr_gap": 0.2521,
+      "equalized_odds_fnr_gap": -0.1125,
+      "predictive_parity_gap": 0.0906
+    },
+    {
+      "threshold": 0.3,
+      "black": {
+        "fpr": 0.8277,
+        "fnr": 0.0632,
+        "ppv": 0.5579,
+        "positive_rate": 0.8852,
+        "tp": 400,
+        "fp": 317,
+        "tn": 66,
+        "fn": 27
+      },
+      "white": {
+        "fpr": 0.5489,
+        "fnr": 0.245,
+        "ppv": 0.4646,
+        "positive_rate": 0.6286,
+        "tp": 151,
+        "fp": 174,
+        "tn": 143,
+        "fn": 49
+      },
+      "demographic_parity_gap": 0.2566,
+      "equalized_odds_fpr_gap": 0.2788,
+      "equalized_odds_fnr_gap": -0.1818,
+      "predictive_parity_gap": 0.0933
+    },
+    {
+      "threshold": 0.35,
+      "black": {
+        "fpr": 0.6841,
+        "fnr": 0.1054,
+        "ppv": 0.5932,
+        "positive_rate": 0.7951,
+        "tp": 382,
+        "fp": 262,
+        "tn": 121,
+        "fn": 45
+      },
+      "white": {
+        "fpr": 0.4353,
+        "fnr": 0.33,
+        "ppv": 0.4926,
+        "positive_rate": 0.5261,
+        "tp": 134,
+        "fp": 138,
+        "tn": 179,
+        "fn": 66
+      },
+      "demographic_parity_gap": 0.269,
+      "equalized_odds_fpr_gap": 0.2488,
+      "equalized_odds_fnr_gap": -0.2246,
+      "predictive_parity_gap": 0.1006
+    },
+    {
+      "threshold": 0.4,
+      "black": {
+        "fpr": 0.5222,
+        "fnr": 0.1639,
+        "ppv": 0.6409,
+        "positive_rate": 0.6877,
+        "tp": 357,
+        "fp": 200,
+        "tn": 183,
+        "fn": 70
+      },
+      "white": {
+        "fpr": 0.3312,
+        "fnr": 0.445,
+        "ppv": 0.5139,
+        "positive_rate": 0.4178,
+        "tp": 111,
+        "fp": 105,
+        "tn": 212,
+        "fn": 89
+      },
+      "demographic_parity_gap": 0.2699,
+      "equalized_odds_fpr_gap": 0.191,
+      "equalized_odds_fnr_gap": -0.2811,
+      "predictive_parity_gap": 0.127
+    },
+    {
+      "threshold": 0.45,
+      "black": {
+        "fpr": 0.3969,
+        "fnr": 0.2389,
+        "ppv": 0.6813,
+        "positive_rate": 0.5889,
+        "tp": 325,
+        "fp": 152,
+        "tn": 231,
+        "fn": 102
+      },
+      "white": {
+        "fpr": 0.2114,
+        "fnr": 0.555,
+        "ppv": 0.5705,
+        "positive_rate": 0.3017,
+        "tp": 89,
+        "fp": 67,
+        "tn": 250,
+        "fn": 111
+      },
+      "demographic_parity_gap": 0.2872,
+      "equalized_odds_fpr_gap": 0.1855,
+      "equalized_odds_fnr_gap": -0.3161,
+      "predictive_parity_gap": 0.1108
+    },
+    {
+      "threshold": 0.5,
+      "black": {
+        "fpr": 0.2663,
+        "fnr": 0.3817,
+        "ppv": 0.7213,
+        "positive_rate": 0.4519,
+        "tp": 264,
+        "fp": 102,
+        "tn": 281,
+        "fn": 163
+      },
+      "white": {
+        "fpr": 0.123,
+        "fnr": 0.685,
+        "ppv": 0.6176,
+        "positive_rate": 0.1973,
+        "tp": 63,
+        "fp": 39,
+        "tn": 278,
+        "fn": 137
+      },
+      "demographic_parity_gap": 0.2546,
+      "equalized_odds_fpr_gap": 0.1433,
+      "equalized_odds_fnr_gap": -0.3033,
+      "predictive_parity_gap": 0.1037
+    },
+    {
+      "threshold": 0.55,
+      "black": {
+        "fpr": 0.201,
+        "fnr": 0.4824,
+        "ppv": 0.7416,
+        "positive_rate": 0.3679,
+        "tp": 221,
+        "fp": 77,
+        "tn": 306,
+        "fn": 206
+      },
+      "white": {
+        "fpr": 0.0662,
+        "fnr": 0.765,
+        "ppv": 0.6912,
+        "positive_rate": 0.1315,
+        "tp": 47,
+        "fp": 21,
+        "tn": 296,
+        "fn": 153
+      },
+      "demographic_parity_gap": 0.2364,
+      "equalized_odds_fpr_gap": 0.1348,
+      "equalized_odds_fnr_gap": -0.2826,
+      "predictive_parity_gap": 0.0504
+    },
+    {
+      "threshold": 0.6,
+      "black": {
+        "fpr": 0.1697,
+        "fnr": 0.5667,
+        "ppv": 0.74,
+        "positive_rate": 0.3086,
+        "tp": 185,
+        "fp": 65,
+        "tn": 318,
+        "fn": 242
+      },
+      "white": {
+        "fpr": 0.0473,
+        "fnr": 0.825,
+        "ppv": 0.7,
+        "positive_rate": 0.0967,
+        "tp": 35,
+        "fp": 15,
+        "tn": 302,
+        "fn": 165
+      },
+      "demographic_parity_gap": 0.2119,
+      "equalized_odds_fpr_gap": 0.1224,
+      "equalized_odds_fnr_gap": -0.2583,
+      "predictive_parity_gap": 0.04
+    },
+    {
+      "threshold": 0.65,
+      "black": {
+        "fpr": 0.1044,
+        "fnr": 0.6464,
+        "ppv": 0.7906,
+        "positive_rate": 0.2358,
+        "tp": 151,
+        "fp": 40,
+        "tn": 343,
+        "fn": 276
+      },
+      "white": {
+        "fpr": 0.0284,
+        "fnr": 0.9,
+        "ppv": 0.6897,
+        "positive_rate": 0.0561,
+        "tp": 20,
+        "fp": 9,
+        "tn": 308,
+        "fn": 180
+      },
+      "demographic_parity_gap": 0.1797,
+      "equalized_odds_fpr_gap": 0.076,
+      "equalized_odds_fnr_gap": -0.2536,
+      "predictive_parity_gap": 0.1009
+    },
+    {
+      "threshold": 0.7,
+      "black": {
+        "fpr": 0.0653,
+        "fnr": 0.6979,
+        "ppv": 0.8377,
+        "positive_rate": 0.1901,
+        "tp": 129,
+        "fp": 25,
+        "tn": 358,
+        "fn": 298
+      },
+      "white": {
+        "fpr": 0.0189,
+        "fnr": 0.925,
+        "ppv": 0.7143,
+        "positive_rate": 0.0406,
+        "tp": 15,
+        "fp": 6,
+        "tn": 311,
+        "fn": 185
+      },
+      "demographic_parity_gap": 0.1495,
+      "equalized_odds_fpr_gap": 0.0464,
+      "equalized_odds_fnr_gap": -0.2271,
+      "predictive_parity_gap": 0.1234
+    },
+    {
+      "threshold": 0.75,
+      "black": {
+        "fpr": 0.0496,
+        "fnr": 0.7564,
+        "ppv": 0.8455,
+        "positive_rate": 0.1519,
+        "tp": 104,
+        "fp": 19,
+        "tn": 364,
+        "fn": 323
+      },
+      "white": {
+        "fpr": 0.0189,
+        "fnr": 0.945,
+        "ppv": 0.6471,
+        "positive_rate": 0.0329,
+        "tp": 11,
+        "fp": 6,
+        "tn": 311,
+        "fn": 189
+      },
+      "demographic_parity_gap": 0.119,
+      "equalized_odds_fpr_gap": 0.0307,
+      "equalized_odds_fnr_gap": -0.1886,
+      "predictive_parity_gap": 0.1984
+    },
+    {
+      "threshold": 0.8,
+      "black": {
+        "fpr": 0.0287,
+        "fnr": 0.8103,
+        "ppv": 0.8804,
+        "positive_rate": 0.1136,
+        "tp": 81,
+        "fp": 11,
+        "tn": 372,
+        "fn": 346
+      },
+      "white": {
+        "fpr": 0.0095,
+        "fnr": 0.97,
+        "ppv": 0.6667,
+        "positive_rate": 0.0174,
+        "tp": 6,
+        "fp": 3,
+        "tn": 314,
+        "fn": 194
+      },
+      "demographic_parity_gap": 0.0962,
+      "equalized_odds_fpr_gap": 0.0192,
+      "equalized_odds_fnr_gap": -0.1597,
+      "predictive_parity_gap": 0.2137
+    },
+    {
+      "threshold": 0.85,
+      "black": {
+        "fpr": 0.0157,
+        "fnr": 0.8735,
+        "ppv": 0.9,
+        "positive_rate": 0.0741,
+        "tp": 54,
+        "fp": 6,
+        "tn": 377,
+        "fn": 373
+      },
+      "white": {
+        "fpr": 0.0063,
+        "fnr": 0.985,
+        "ppv": 0.6,
+        "positive_rate": 0.0097,
+        "tp": 3,
+        "fp": 2,
+        "tn": 315,
+        "fn": 197
+      },
+      "demographic_parity_gap": 0.0644,
+      "equalized_odds_fpr_gap": 0.0094,
+      "equalized_odds_fnr_gap": -0.1115,
+      "predictive_parity_gap": 0.3
+    },
+    {
+      "threshold": 0.9,
+      "black": {
+        "fpr": 0.0104,
+        "fnr": 0.9368,
+        "ppv": 0.871,
+        "positive_rate": 0.0383,
+        "tp": 27,
+        "fp": 4,
+        "tn": 379,
+        "fn": 400
+      },
+      "white": {
+        "fpr": 0.0032,
+        "fnr": 0.99,
+        "ppv": 0.6667,
+        "positive_rate": 0.0058,
+        "tp": 2,
+        "fp": 1,
+        "tn": 316,
+        "fn": 198
+      },
+      "demographic_parity_gap": 0.0325,
+      "equalized_odds_fpr_gap": 0.0072,
+      "equalized_odds_fnr_gap": -0.0532,
+      "predictive_parity_gap": 0.2043
+    }
+  ],
+  "summary": {
+    "note": "Chouldechova (2017) impossibility: when base rates differ between groups, Demographic Parity, Equalized Odds, and Predictive Parity cannot all be satisfied simultaneously.",
+    "base_rate_black": 0.5272,
+    "base_rate_white": 0.3868
+  }
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-bias-bg text-bias-text font-sans antialiased; }
+  ::selection { @apply bg-bias-blue/20 text-bias-text; }
+}
+
+@layer components {
+  .card {
+    @apply bg-bias-surface rounded-xl p-6 shadow-sm;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-proxy {
+    @apply badge bg-bias-orange/15 text-bias-orange border border-bias-orange/30;
+  }
+  .badge-independent {
+    @apply badge bg-bias-green/15 text-bias-green border border-bias-green/30;
+  }
+}
+
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #F5F1EC; }
+::-webkit-scrollbar-thumb { background: #DDD5CB; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #7A6E7A; }
+
+.d3-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #FAF7F4;
+  border: 1px solid #DDD5CB;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #2B2D42;
+  max-width: 220px;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(43,45,66,0.12);
+}
