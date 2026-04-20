@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useCallback, useMemo } from 'react'
 
 const RACE_COLORS = {
-  'African-American': ['rgba(201,167,124,0.85)', 'rgba(201,167,124,1)'],
-  'Caucasian':        ['rgba(123,163,199,0.85)', 'rgba(123,163,199,1)'],
-  'Hispanic':         ['rgba(180,140,100,0.75)', 'rgba(180,140,100,1)'],
-  'Asian':            ['rgba(120,170,145,0.75)', 'rgba(120,170,145,1)'],
-  'Other':            ['rgba(180,172,165,0.35)', 'rgba(180,172,165,0.65)'],
+  'African-American': ['rgba(215,162,20,0.85)',   'rgba(215,162,20,1)'],
+  'Caucasian':        ['rgba(74,95,193,0.85)',    'rgba(74,95,193,1)'],
+  'Hispanic':         ['rgba(171,196,255,0.75)',  'rgba(171,196,255,1)'],
+  'Asian':            ['rgba(14,149,148,0.75)',   'rgba(14,149,148,1)'],
+  'Other':            ['rgba(180,172,165,0.35)',  'rgba(180,172,165,0.65)'],
 }
 
 function raceColor(race, hover) {

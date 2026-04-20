@@ -57,8 +57,8 @@ function ImportanceTag({ p, alpha }) {
   )
 }
 
-const COLOR_BLACK = 'rgba(201,167,124,1)'
-const COLOR_WHITE = 'rgba(123,163,199,1)'
+const COLOR_BLACK = 'rgba(215,162,20,1)'
+const COLOR_WHITE = 'rgba(74,95,193,1)'
 
 function MetricCard({ label, value, subLabel, race }) {
   const color = race === 'black' ? COLOR_BLACK : race === 'white' ? COLOR_WHITE : null
@@ -96,7 +96,7 @@ function FPRChart({ blackFPR, whiteFPR }) {
 
     const groups = ['Black', 'White']
     const values = [blackFPR, whiteFPR]
-    const colors = ['rgba(201,167,124,1)', 'rgba(123,163,199,1)']
+    const colors = ['rgba(215,162,20,1)', 'rgba(74,95,193,1)']
 
     const x = d3.scaleBand().domain(groups).range([0, iW]).padding(0.4)
     const y = d3.scaleLinear().domain([0, Math.max(0.7, ...values)]).range([iH, 0])

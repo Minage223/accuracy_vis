@@ -25,10 +25,10 @@ export default function HeroBars() {
 
   // Stats for legend
   const LEGEND_RACES = [
-    { race: 'African-American', color: 'rgba(201,167,124,0.85)', label: 'African-American' },
-    { race: 'Hispanic',         color: 'rgba(180,140,100,0.75)', label: 'Hispanic' },
-    { race: 'Caucasian',        color: 'rgba(123,163,199,0.85)', label: 'Caucasian' },
-    { race: 'Asian',            color: 'rgba(120,170,145,0.75)', label: 'Asian' },
+    { race: 'African-American', color: 'rgba(215,162,20,0.85)',  label: 'African-American' },
+    { race: 'Hispanic',         color: 'rgba(171,196,255,0.75)', label: 'Hispanic' },
+    { race: 'Caucasian',        color: 'rgba(74,95,193,0.85)',  label: 'Caucasian' },
+    { race: 'Asian',            color: 'rgba(14,149,148,0.75)', label: 'Asian' },
     { race: 'Other',            color: 'rgba(180,172,165,0.35)', label: 'Other' },
   ]
   const legendStats = LEGEND_RACES.map(({ race, color, label }) => {

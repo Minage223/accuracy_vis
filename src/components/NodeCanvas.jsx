@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useCallback } from 'react'
 
 const NODE_COLORS = {
-  'African-American': 'rgba(201, 167, 124, 0.9)',
-  'Caucasian':        'rgba(123, 163, 199, 0.9)',
+  'African-American': 'rgba(215, 162, 20,  0.9)',
+  'Caucasian':        'rgba(74,  95,  193, 0.9)',
+  'Hispanic':         'rgba(171, 196, 255, 0.9)',
+  'Asian':            'rgba(14,  149, 148, 0.9)',
   'Other':            'rgba(163, 155, 146, 0.8)',
 }
 

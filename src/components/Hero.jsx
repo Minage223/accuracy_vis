@@ -116,8 +116,10 @@ export default function Hero() {
         display: 'flex', gap: 16, alignItems: 'center',
       }}>
         {[
-          { color: 'rgba(201,167,124,0.9)', label: 'African-American' },
-          { color: 'rgba(123,163,199,0.9)', label: 'Caucasian' },
+          { color: 'rgba(215,162,20,0.9)',  label: 'African-American' },
+          { color: 'rgba(74,95,193,0.9)',   label: 'Caucasian' },
+          { color: 'rgba(171,196,255,0.9)', label: 'Hispanic' },
+          { color: 'rgba(14,149,148,0.9)', label: 'Asian' },
         ].map(({ color, label }) => (
           <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <div style={{ width: 10, height: 10, borderRadius: '50%',

@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         bias: {
-          bg:      '#F5F1EC',   // warm off-white — page background
+          bg:      '#F5F1EC',   // gray — page background
           surface: '#FFFFFF',   // white — card surfaces
           border:  '#DDD5CB',   // warm gray — borders & dividers
           text:    '#2B2D42',   // deep navy — primary text

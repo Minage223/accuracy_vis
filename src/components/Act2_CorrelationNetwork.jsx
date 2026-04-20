@@ -189,14 +189,14 @@ function BWCompare({ rows, visible }) {
                   {/* Black dot */}
                   <motion.div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"
                     style={{ left: `${bX}%`, width: isHov ? 9 : 7, height: isHov ? 9 : 7,
-                             background: 'rgba(201,167,124,1)', transition: 'width 0.15s, height 0.15s' }}
+                             background: 'rgba(215,162,20,1)', transition: 'width 0.15s, height 0.15s' }}
                     initial={{ opacity: 0 }} animate={{ opacity: visible ? 1 : 0 }}
                     transition={{ delay: 0.25 + i * 0.04 }}
                   />
                   {/* White dot */}
                   <motion.div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"
                     style={{ left: `${wX}%`, width: isHov ? 9 : 7, height: isHov ? 9 : 7,
-                             background: 'rgba(123,163,199,1)', transition: 'width 0.15s, height 0.15s' }}
+                             background: 'rgba(74,95,193,1)', transition: 'width 0.15s, height 0.15s' }}
                     initial={{ opacity: 0 }} animate={{ opacity: visible ? 1 : 0 }}
                     transition={{ delay: 0.3 + i * 0.04 }}
                   />
@@ -205,7 +205,7 @@ function BWCompare({ rows, visible }) {
               {isHov && (
                 <div className="text-[10px] flex gap-3 pl-20 pb-1" style={{ marginTop: -2 }}>
                   <span style={{ color: 'rgba(201,167,124,1)' }}>Black avg {row.black_mean.toFixed(2)}</span>
-                  <span style={{ color: 'rgba(123,163,199,1)' }}>White avg {row.white_mean.toFixed(2)}</span>
+                  <span style={{ color: 'rgba(74,95,193,1)' }}>White avg {row.white_mean.toFixed(2)}</span>
                 </div>
               )}
             </div>
@@ -215,7 +215,7 @@ function BWCompare({ rows, visible }) {
 
       {/* Legend */}
       <div className="flex gap-4 text-[10px] pt-1 border-t border-bias-border">
-        {[['rgba(201,167,124,1)', 'Black'], ['rgba(123,163,199,1)', 'White']].map(([c, l]) => (
+        {[['rgba(201,167,124,1)', 'Black'], ['rgba(74,95,193,1)', 'White']].map(([c, l]) => (
           <span key={l} className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full inline-block" style={{ background: c }} />
             <span className="text-bias-muted">{l}</span>

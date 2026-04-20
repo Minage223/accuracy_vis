@@ -9,10 +9,24 @@ const VERTICES = {
 
 function barycentricWeights(px, py, v) {
   const denom = (v.eo.y - v.pp.y) * (v.dp.x - v.pp.x) + (v.pp.x - v.eo.x) * (v.dp.y - v.pp.y)
-  const wDP   = ((v.eo.y - v.pp.y) * (px - v.pp.x) + (v.pp.x - v.eo.x) * (py - v.pp.y)) / denom
-  const wEO   = ((v.pp.y - v.dp.y) * (px - v.pp.x) + (v.dp.x - v.pp.x) * (py - v.pp.y)) / denom
-  const wPP   = 1 - wDP - wEO
-  return { wDP: Math.max(0, wDP), wEO: Math.max(0, wEO), wPP: Math.max(0, wPP) }
+  const wDP   = Math.max(0, ((v.eo.y - v.pp.y) * (px - v.pp.x) + (v.pp.x - v.eo.x) * (py - v.pp.y)) / denom)
+  const wEO   = Math.max(0, ((v.pp.y - v.dp.y) * (px - v.pp.x) + (v.dp.x - v.pp.x) * (py - v.pp.y)) / denom)
+  const wPP   = Math.max(0, 1 - wDP - wEO)
+  const sum   = wDP + wEO + wPP
+  return { wDP: wDP / sum, wEO: wEO / sum, wPP: wPP / sum }
+}
+
+function clampToTriangle(px, py, v) {
+  const denom = (v.eo.y - v.pp.y) * (v.dp.x - v.pp.x) + (v.pp.x - v.eo.x) * (v.dp.y - v.pp.y)
+  const wDP   = Math.max(0, ((v.eo.y - v.pp.y) * (px - v.pp.x) + (v.pp.x - v.eo.x) * (py - v.pp.y)) / denom)
+  const wEO   = Math.max(0, ((v.pp.y - v.dp.y) * (px - v.pp.x) + (v.dp.x - v.pp.x) * (py - v.pp.y)) / denom)
+  const wPP   = Math.max(0, 1 - wDP - wEO)
+  const sum   = wDP + wEO + wPP
+  const nDP = wDP / sum, nEO = wEO / sum, nPP = wPP / sum
+  return {
+    x: nDP * v.dp.x + nEO * v.eo.x + nPP * v.pp.x,
+    y: nDP * v.dp.y + nEO * v.eo.y + nPP * v.pp.y,
+  }
 }
 
 function clamp(v, lo = 0, hi = 1) { return Math.max(lo, Math.min(hi, v)) }
@@ -209,7 +223,7 @@ export default function Act5_FairnessDilemma({ data }) {
 
   const weights = barycentricWeights(pos.x, pos.y, VERTICES)
   const metrics = interpolateMetrics(records, weights)
-  const handleDrag = useCallback(coords => setPos(coords), [])
+  const handleDrag = useCallback(coords => setPos(clampToTriangle(coords.x, coords.y, VERTICES)), [])
 
   return (
     <div className="max-w-5xl mx-auto px-6 pb-24">
@@ -284,10 +298,10 @@ export default function Act5_FairnessDilemma({ data }) {
             <>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="card">
-                  <ConfusionMatrix group="Black Defendants" m={metrics.black} color="rgba(201,167,124,1)" />
+                  <ConfusionMatrix group="Black Defendants" m={metrics.black} color="rgba(215,162,20,1)" />
                 </div>
                 <div className="card">
-                  <ConfusionMatrix group="White Defendants" m={metrics.white} color="rgba(123,163,199,1)" />
+                  <ConfusionMatrix group="White Defendants" m={metrics.white} color="rgba(74,95,193,1)" />
                 </div>
               </div>
 

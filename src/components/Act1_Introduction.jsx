@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const COLOR_BLACK = 'rgba(201,167,124,1)'
-const COLOR_WHITE = 'rgba(123,163,199,1)'
+const COLOR_BLACK = 'rgba(215,162,20,1)'
+const COLOR_WHITE = 'rgba(74,95,193,1)'
 const COLOR_TRACK = '#DDD5CB'
 
 // ── Score Distribution Chart ────────────────────────────────────────────
@@ -278,10 +278,10 @@ function ClickableBar({ segs, n }) {
 
 // ── Reoffend composition chart ────────────────────────────────────────────
 const RACE_GROUPS = [
-  { key: 'black',    label: 'Black',    color: 'rgba(201,167,124,1)' },
-  { key: 'hispanic', label: 'Hispanic', color: 'rgba(180,155,110,0.7)' },
-  { key: 'white',    label: 'White',    color: 'rgba(123,163,199,1)' },
-  { key: 'asian',    label: 'Asian',    color: 'rgba(140,180,160,0.8)' },
+  { key: 'black',    label: 'Black',    color: 'rgba(215,162,20,1)' },
+  { key: 'hispanic', label: 'Hispanic', color: 'rgba(171,196,255,0.7)' },
+  { key: 'white',    label: 'White',    color: 'rgba(74,95,193,1)' },
+  { key: 'asian',    label: 'Asian',    color: 'rgba(14,149,148,0.8)' },
   { key: 'other',    label: 'Other',    color: 'rgba(180,172,165,0.6)' },
 ]
 
